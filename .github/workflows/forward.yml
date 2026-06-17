@@ -1,0 +1,32 @@
+name: Forward
+
+on:
+
+  workflow_call:
+    inputs:
+      project-url:
+        description: Target project URL
+        type: string
+        required: true
+
+jobs:
+
+  forward:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Generate app token
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.FORWARD_APP_ID }}
+          private-key: ${{ secrets.FORWARD_APP_KEY }}
+          owner: metreeca
+
+      - name: Forward to project
+        uses: actions/add-to-project@v2
+        with:
+          project-url: ${{ inputs.project-url }}
+          github-token: ${{ steps.app-token.outputs.token }}
