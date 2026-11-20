@@ -5,6 +5,10 @@ Organisation-wide automation that forwards newly opened **issues** and **pull re
 It replaces the built-in "Auto-add to project" workflows, which are capped at 5 repositories on Pro/Team plans, with a
 single reusable workflow that any number of repositories can call.
 
+> [!NOTE]
+> This repository is the one exception. It hosts the reusable workflow as `forward.yml`, so it cannot carry a caller
+> under that name. It joins the Facilities project through that project's built-in "Auto-add to project" workflow.
+
 ## How it works
 
 ```
