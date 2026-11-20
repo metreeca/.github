@@ -100,5 +100,6 @@ automatically once they carry a caller.
 | Token minted but "Forward to project" fails | App lacks `Projects: read and write`, or isn't installed on the org              |
 | No run at all on a new issue/PR             | Caller not on the repo's **default branch** yet (e.g. still only on `release/*`) |
 | Item added to the wrong board               | Caller's `project-url` points at the wrong project                               |
+| Dependabot PR not on the board, job skipped | By design: Dependabot runs receive no Actions secrets, so they are not forwarded |
 
 Run logs are under each repository's **Actions** tab, workflow **Forward**.

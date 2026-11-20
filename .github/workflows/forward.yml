@@ -13,6 +13,9 @@ jobs:
 
   forward:
 
+    # Dependabot runs get no Actions secrets, so the app token cannot be minted for its pull requests
+    if: github.actor != 'dependabot[bot]'
+
     runs-on: ubuntu-latest
 
     steps:
