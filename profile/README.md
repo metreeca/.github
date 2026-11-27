@@ -1,13 +1,14 @@
-[Metreeca](https://www.metreeca.com/) brings together a group of professionals with extensive experience in software
-engineering, management and business consulting, specialising in the development of agile solutions for harnessing
-knowledge in complex and dynamic contexts.
+[Metreeca](https://www.metreeca.com/) is a team of knowledge graph specialists with extensive experience in software
+engineering, management and business consulting. We help organisations connect the dots in their data.
 
-We leverage semantic web technologies, graph databases, natural language processing and machine learning to quickly and
-cost-effectively create enterprise knowledge graphs ready to power a wide range of value-added applications and
-services.
+We harness open linked data standards and generative AI to develop agile data solutions tailored to your organisation.
+People and applications can then make full use of fragmented, unstructured and disorganised data, with no impact on
+existing processes and information systems and no need to replace or migrate them.
 
-Focusing on user needs, we develop shared business ontologies that define how to exchange and interpret data in a
-coherent way, enable agile data integration from fragmented and unstructured data sources and enforce data consistency.
+We team up with users and data owners to understand their business needs and design shared domain models. These models
+define how to exchange and interpret data coherently across the organisation. Our knowledge graphs weave scattered
+sources into a hyperlinked read/write data hub, while AI agents extract actionable facts from unstructured content.
 
-We implement end-to-end solutions covering the whole data supply chain from integration to delivery, supporting turnkey
-self-service search / analytics and rapid data-driven application development
+We provide end-to-end support, from data modelling and integration to custom apps, APIs and conversational data
+assistants. Our open source [Grafctory](https://github.com/grafctory) platform turns scattered organisational data into
+shared knowledge graphs, ready to feed applications, dashboards, analytics and AI agents throughout the enterprise.
