@@ -26,7 +26,7 @@ jobs:
         id: app-token
         uses: actions/create-github-app-token@v3
         with:
-          app-id: ${{ vars.FORWARD_APP_ID }}
+          client-id: ${{ vars.FORWARD_APP_ID }}
           private-key: ${{ secrets.FORWARD_APP_KEY }}
           owner: metreeca
 

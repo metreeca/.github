@@ -69,11 +69,11 @@ New packages should include the caller in their scaffold so they self-cover with
 
 ## Configuration
 
-| Setting           | Where                           | Purpose                                    |
-|-------------------|---------------------------------|--------------------------------------------|
-| `project-url`     | caller `with:` (required input) | Target project; each caller states its own |
-| `FORWARD_APP_ID`  | org **variable**                | GitHub App client id (passed to `app-id`)  |
-| `FORWARD_APP_KEY` | org **secret**                  | GitHub App private key (PEM)               |
+| Setting           | Where                           | Purpose                                      |
+|-------------------|---------------------------------|----------------------------------------------|
+| `project-url`     | caller `with:` (required input) | Target project; each caller states its own   |
+| `FORWARD_APP_ID`  | org **variable**                | GitHub App client id (passed to `client-id`) |
+| `FORWARD_APP_KEY` | org **secret**                  | GitHub App private key (PEM)                 |
 
 Both the variable and secret must have visibility covering the calling repositories; `secrets: inherit` forwards the
 secret into the reusable workflow.
