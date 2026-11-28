@@ -14,7 +14,9 @@ jobs:
   forward:
 
     # Dependabot runs get no Actions secrets, so the app token cannot be minted for its pull requests
-    if: github.actor != 'dependabot[bot]'
+    #
+    # Transfers are skipped: the issue no longer exists in the source, and the destination forwards it when opened
+    if: github.actor != 'dependabot[bot]' && github.event.action != 'transferred'
 
     runs-on: ubuntu-latest
 
